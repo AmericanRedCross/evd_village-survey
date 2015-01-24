@@ -1,0 +1,154 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin:0px;  
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+.noPadding {
+  padding: 0px;
+}
+
+#infoWrapper{
+  overflow: auto;
+}
+#info-village {
+  padding: 24px 12px;
+}
+.info-value {
+  font-weight: bold;
+}
+/*#nav-search {
+  border-bottom: solid 1px #ccc;
+}*/
+
+#search-box {
+  position: absolute;
+  left: 47px;
+  top: 10px;
+  z-index: 99999;
+}
+
+
+.mappedMarker {
+  stroke: none;
+  fill: #7f181b;
+  fill-opacity: 0.5;
+  cursor: pointer;
+}
+.mappedMarker.selected {
+  stroke: #ed1b2e;
+  stroke-width: 5px;
+  fill-opacity: 1;
+
+}
+
+.btn-zoom {
+  position: absolute;
+  left: 10px;
+  top: 72px;
+  background-color: #ffffff;
+  border-color: #d7d7d8;
+  color: #464646;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+.leaflet-control-zoom, .btn-zoom, .leaflet-top {
+  z-index: 10;
+}
+.btn:focus, .btn:active {
+  outline: 0 !important;
+}
+
+#tooltip {                      
+    position:absolute;
+    z-index:999;
+    font-size:16px;
+    font-weight: bold;
+    color: #222222;       
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 4px;       
+}    
+#tooltip:empty {
+    display:none;
+}
+
+
+
+
+
+
+.typeahead,
+.tt-query,
+.tt-hint {
+  width: 396px;
+  height: 30px;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 30px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  outline: none;
+}
+
+.typeahead {
+  background-color: #fff;
+}
+
+.tt-dropdown-menu .empty-message {
+  padding: 5px 10px;
+  text-align: center;
+
+}
+
+.typeahead:focus {
+  border: 2px solid #0097cf;
+}
+
+.tt-query {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+  color: #999
+}
+
+.tt-dropdown-menu {
+  z-index: 20;
+  width: 422px;
+  margin-top: 12px;
+  padding: 8px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+  padding: 3px 20px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.tt-suggestion.tt-cursor {
+  color: #fff;
+  background-color: #0097cf;
+
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+

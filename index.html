@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+<!-- bower:css -->
+<link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+<!-- endbower -->
+<link rel="stylesheet" href="css/custom.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+
+
+  <body> 
+
+    <div id="tooltip"></div>
+
+    <div class="container-fluid noPadding">
+      <div class="col-xs-8 noPadding">
+        <div id="map-container" style="position:relative;">
+
+          <div id="search-box">
+        <input class="typeahead" type="text" placeholder="Search for a village...">
+      </div>
+
+          <button class="btn btn-sm btn-zoom" type="button" onClick="mapToBounds();"><span class="glyphicon glyphicon-globe"></span></button> 
+          <div id="map"></div>
+        </div>
+      </div>
+      <div class="col-xs-4 noPadding">
+        <div id="infoWrapper">
+          <div id="info-village">
+              <span class="info-key">Village name: </span>
+              <span class="info-value" id="info-village-name"></span><br>
+              <span class="info-key">Alternate name: </span>
+              <span class="info-value" id="info-village-altname"></span><br>
+              <span class="info-key">Chiefdom: </span>
+              <span class="info-value" id="info-village-chiefdom"></span><br>
+              <span class="info-key">District: </span>
+              <span class="info-value" id="info-village-district"></span><br>
+              <span class="info-key">Ward: </span>
+              <span class="info-value" id="info-village-ward"></span><br>
+              <span class="info-key">Constituency: </span>
+              <span class="info-value" id="info-village-constituency"></span><br>
+              <span class="info-key">Number of Households</span>
+              <span class="info-value" id="info-village-households"></span><br>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+      
+
+
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/d3/d3.js"></script>
+<script src="bower_components/leaflet/dist/leaflet.js"></script>
+<script src="bower_components/leaflet/dist/leaflet-src.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/typeahead.js/dist/typeahead.bundle.js"></script>
+<script src="bower_components/handlebars/handlebars.js"></script>
+<!-- endbower -->
+<script src="js/main.js"></script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
